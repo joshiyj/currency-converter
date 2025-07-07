@@ -11,7 +11,7 @@ A responsive currency converter built using HTML, CSS, and JavaScript. It uses [
 
 
 ## 🚀 Live Demo
-👉 [Click here to view live](https://joshiyl.github.io/currency-converter)
+👉 [Click here to view live](https://joshiyj.github.io/currency-converter/)
 
 ## 📁 Files
 - `index.html`
