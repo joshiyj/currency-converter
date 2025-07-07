@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffe259, #ffa751);
+}
+
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  padding-left: 0.75rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.select-container img {
+  width: 2rem;
+  height: auto;
+}
+
+.select-container select {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.msg {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+  background-color: #f0f0f0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+form button {
+  height: 3rem;
+  background: coral;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  background-color: #333;
+  transform: scale(0.97);
+}
+
+/* 🔁 Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .dropdown {
+    flex-direction: column;
+  }
+
+  form input, form button {
+    font-size: 1rem;
+  }
+
+  .msg {
+    font-size: 1.1rem;
+  }
+}
+    
